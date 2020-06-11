@@ -17,6 +17,7 @@
 		6416D34C2492940400DDF197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416D34B2492940400DDF197 /* main.m */; };
 		6416D3562492940500DDF197 /* MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416D3552492940500DDF197 /* MapsTests.m */; };
 		6416D3612492940500DDF197 /* MapsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416D3602492940500DDF197 /* MapsUITests.m */; };
+		6416D3712492971B00DDF197 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416D3702492971B00DDF197 /* LocationAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		6416D35C2492940500DDF197 /* MapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6416D3602492940500DDF197 /* MapsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsUITests.m; sourceTree = "<group>"; };
 		6416D3622492940500DDF197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6416D36F2492971B00DDF197 /* LocationAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
+		6416D3702492971B00DDF197 /* LocationAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		6416D3352492940200DDF197 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				6416D36E249296D200DDF197 /* Model */,
 				6416D3362492940200DDF197 /* AppDelegate.h */,
 				6416D3372492940200DDF197 /* AppDelegate.m */,
 				6416D3392492940200DDF197 /* SceneDelegate.h */,
@@ -138,6 +142,15 @@
 				6416D3622492940500DDF197 /* Info.plist */,
 			);
 			path = MapsUITests;
+			sourceTree = "<group>";
+		};
+		6416D36E249296D200DDF197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6416D36F2492971B00DDF197 /* LocationAnnotation.h */,
+				6416D3702492971B00DDF197 /* LocationAnnotation.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6416D34C2492940400DDF197 /* main.m in Sources */,
+				6416D3712492971B00DDF197 /* LocationAnnotation.m in Sources */,
 				6416D33E2492940200DDF197 /* ViewController.m in Sources */,
 				6416D3382492940200DDF197 /* AppDelegate.m in Sources */,
 				6416D3442492940200DDF197 /* Maps.xcdatamodeld in Sources */,
